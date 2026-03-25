@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="一个极简高级风格的个人网站模板，适合部署到 Cloudflare Pages。"
+    content="王奕博的个人网站，一个更克制的暗色极简页面。"
   >
-  <title>王奕博 | Personal Space</title>
+  <title>王奕博</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -16,148 +16,86 @@
   >
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="返回顶部">
-        <span class="brand-mark"></span>
-        <span class="brand-text">王奕博</span>
-      </a>
-      <nav class="site-nav" aria-label="主导航">
-        <a href="#about">About</a>
-        <a href="#focus">Focus</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
+<body class="page-home">
+  <div class="page-shell page-shell-home">
     <main id="top">
-      <section class="hero section reveal">
-        <p class="eyebrow">Personal Space / Minimal Edition</p>
-        <h1>
-          你好，我是
-          <span>王奕博</span>
-        </h1>
-        <p class="hero-copy">
-          这里是我在互联网上的一小块留白，用来放想法、作品，以及那些慢慢变清晰的生活片段。
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#contact">联系我</a>
-          <a class="button button-secondary" href="#about">继续往下看</a>
-        </div>
+      <section class="hero-minimal reveal">
+        <p class="hero-kicker">a quiet page</p>
+        <h1>王奕博</h1>
+        <p class="hero-birthday">20031021</p>
+        <a class="button button-quiet" href="contact.html">Contact Me</a>
+        <a class="scroll-cue" href="#teams">向下继续</a>
       </section>
 
-      <section class="intro-grid section">
-        <article class="intro-card reveal">
-          <p class="card-label">Current</p>
-          <h2>最近在做什么</h2>
-          <p>
-            正在学习 Web、整理自己的数字作品，也想把兴趣慢慢做成真正能被看见的东西。
-          </p>
-        </article>
-        <article class="intro-card reveal">
-          <p class="card-label">Mood</p>
-          <h2>我喜欢的状态</h2>
-          <p>
-            安静地学习，克制地表达，偶尔做一点有锋芒但不吵闹的东西。
-          </p>
-        </article>
-        <article class="intro-card reveal">
-          <p class="card-label">Note</p>
-          <h2>这个网站会放什么</h2>
-          <p>
-            关于我、正在进行的小项目、一些收藏，以及少量但真诚的生活记录。
-          </p>
-        </article>
-      </section>
-
-      <section class="about section reveal" id="about">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2>不是模板化介绍，而是一点真实的自我说明。</h2>
+      <section class="teams-minimal reveal" id="teams">
+        <div class="section-heading section-heading-minimal">
+          <p class="eyebrow">My Ingredients</p>
+          <h2>That's all.</h2>
         </div>
-        <div class="about-layout">
-          <div class="about-copy">
-            <p>
-              我不是那种标准答案里的人，也不想把自己写成一份冷冰冰的说明书。
-              比起“会什么”，我更在意“正在变成什么样的人”。
-            </p>
-            <p>
-              这个站点会慢慢长出来。它可能不会很吵，也不会什么都塞进去，
-              但我希望它足够像我，足够克制，也足够诚实。
-            </p>
-          </div>
-          <aside class="about-panel">
-            <div>
-              <span class="panel-label">Base</span>
-              <p>中国 · 南京</p>
+
+        <div class="teams-grid teams-grid-large">
+          <article class="team-card team-card-minimal reveal">
+            <div class="team-logo-wrap team-logo-wrap-large">
+              <img
+                class="team-logo team-logo-large"
+                src="assets/logos/real-madrid.svg"
+                alt="皇家马德里俱乐部 logo"
+                loading="lazy"
+              >
             </div>
-            <div>
-              <span class="panel-label">Keywords</span>
-              <p>Minimal, Calm, Curious</p>
+            <div class="team-copy team-copy-minimal">
+              <p class="card-label">Football</p>
+              <h3>皇家马德里</h3>
             </div>
-            <div>
-              <span class="panel-label">Currently Into</span>
-              <p>Web Design / Writing / Music</p>
+          </article>
+
+          <article class="team-card team-card-minimal reveal">
+            <div class="team-logo-wrap team-logo-wrap-large">
+              <img
+                class="team-logo team-logo-wide team-logo-large"
+                src="assets/logos/warriors.svg"
+                alt="勇士队 logo"
+                loading="lazy"
+              >
             </div>
-          </aside>
-        </div>
-      </section>
-
-      <section class="focus section" id="focus">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Focus</p>
-          <h2>目前最想认真做好的三件事。</h2>
-        </div>
-        <div class="focus-grid">
-          <article class="focus-card reveal">
-            <p class="focus-index">01</p>
-            <h3>Learning</h3>
-            <p>把零散的知识真正串起来，不只停在“懂一点点”。</p>
+            <div class="team-copy team-copy-minimal">
+              <p class="card-label">NBA</p>
+              <h3>Warriors</h3>
+            </div>
           </article>
-          <article class="focus-card reveal">
-            <p class="focus-index">02</p>
-            <h3>Creating</h3>
-            <p>做一些小而完整的作品，让表达不只是停留在想法里。</p>
-          </article>
-          <article class="focus-card reveal">
-            <p class="focus-index">03</p>
-            <h3>Exploring</h3>
-            <p>保留好奇心，慢慢找到自己真正想长期投入的方向。</p>
-          </article>
-        </div>
-      </section>
 
-      <section class="quote-block section reveal" aria-label="个人短句">
-        <p>
-          “我想把网站做得像一间房间，
-          不是为了证明什么，
-          只是让经过的人知道我在这里。”
-        </p>
-      </section>
+          <article class="team-card team-card-minimal reveal">
+            <div class="team-logo-wrap team-logo-wrap-large">
+              <img
+                class="team-logo team-logo-large"
+                src="assets/logos/vatality.png"
+                alt="Team Vitality logo"
+                loading="lazy"
+              >
+            </div>
+            <div class="team-copy team-copy-minimal">
+              <p class="card-label">CS</p>
+              <h3>Vitality</h3>
+            </div>
+          </article>
 
-      <section class="contact section reveal" id="contact">
-        <div class="section-heading">
-          <p class="eyebrow">Contact</p>
-          <h2>如果你也喜欢克制、清晰、带一点温度的东西，欢迎找到我。</h2>
-        </div>
-        <div class="contact-layout">
-          <div class="contact-copy">
-            <p>
-              QQ：23948460
-            </p>
-          </div>
-          <div class="contact-links">
-            <a href="23948460@qq.com">23948460@qq.com</a>
-            <a href="https://github.com/polosnow" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
+          <article class="team-card team-card-minimal reveal">
+            <div class="team-logo-wrap team-logo-wrap-large">
+              <img
+                class="team-logo team-logo-wide team-logo-large"
+                src="assets/logos/blg.png"
+                alt="BLG logo"
+                loading="lazy"
+              >
+            </div>
+            <div class="team-copy team-copy-minimal">
+              <p class="card-label">League of Legends</p>
+              <h3>BLG</h3>
+            </div>
+          </article>
         </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <p>Built with care. Hosted on Cloudflare Pages.</p>
-      <p><span id="year"></span> / 王奕博</p>
-    </footer>
   </div>
 
   <script src="script.js"></script>
